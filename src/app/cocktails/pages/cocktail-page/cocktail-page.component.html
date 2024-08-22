@@ -1,0 +1,71 @@
+
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+</ng-template>
+
+<div *ngIf="cocktail; else divLoading" class="grid p-2">
+
+  <mat-card class="col-12 sm:col-6">
+
+    <mat-card-header>
+      <mat-card-title>{{ cocktail.cocktail }}</mat-card-title>
+    </mat-card-header>
+
+
+    <img [src]="cocktail | cocktailImage" [alt]="cocktail.cocktail" mat-card-image />
+
+  </mat-card>
+
+  <mat-card class="col-12 sm:col-6">
+
+    <mat-card-header>
+      <mat-card-title>Información</mat-card-title>
+
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+          <h2>Receta:</h2>
+        <mat-chip-listbox>
+          <mat-chip *ngFor="let receta of cocktail.receta.split(',')">
+            {{ receta }}
+        </mat-chip>
+        </mat-chip-listbox>
+        <mat-list-item>
+          <span>Método:</span>
+          {{ cocktail.metodo }}
+        </mat-list-item>
+        <mat-list-item>
+          <span>País de origen:</span>
+          {{ cocktail.origen }}
+        </mat-list-item>
+        <mat-list-item>
+          <span>Tipo de copa</span>
+          {{ cocktail.copa }}
+        </mat-list-item>
+        <mat-list-item>
+          <span>Garnish:</span>
+          {{ cocktail.garnish }}
+        </mat-list-item>
+
+      </mat-list>
+
+      <button
+        mat-button
+        color="warn"
+        (click)="goBack()"
+      >
+        Return
+      </button>
+    </mat-card-content>
+
+  </mat-card>
+
+
+</div>

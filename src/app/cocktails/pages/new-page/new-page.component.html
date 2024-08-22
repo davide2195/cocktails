@@ -1,0 +1,123 @@
+<h1>
+  {{ currentCocktail.id ? 'Edit': 'Add' }}
+  Cocktail
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+
+        <form class="grid" [formGroup]="cocktailForm" (ngSubmit)="onSubmit()">
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Cocktail</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="cocktail"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Método</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="metodo"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Origen</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="origen"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Copa</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="copa"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Receta</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="receta"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Garnish</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="garnish"
+               />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Alternative Image</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="alt_img"
+               />
+          </mat-form-field>
+
+        </form>
+
+        <div class="flex justify-content-between">
+            <button
+              *ngIf="currentCocktail.id"
+              mat-flat-button
+              color="warn"
+              (click)="onConfirmDelete()"
+            >
+              Delete
+              <mat-icon>delete</mat-icon>
+            </button>
+            <span></span>
+
+            <button
+              mat-flat-button
+              color="primary"
+              (click)="onSubmit()"
+            >
+             <mat-icon>save</mat-icon>
+              Save
+           </button>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+
+
+    <mat-card>
+      <img [src]="currentCocktail | cocktailImage" alt="cocktails image" matCardImage>
+    </mat-card>
+
+
+  </div>
+
+</div>

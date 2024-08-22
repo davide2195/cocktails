@@ -1,0 +1,190 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "usuario": "Juan David",
+      "email": "juan.david@gmail.com"
+    }
+  ],
+  "cocktails": [
+    {
+      "id":       "p-colada",
+      "cocktail": "Pina Colada",
+      "origen":   "Puerto Rico",
+      "metodo":   "Frozen",
+      "copa":     "Huracan",
+      "receta":   "50 ml. de Ron blanco, 30 ml. de crema de coco, 50 ml. de zumo de piña, Hielo picado",
+      "garnish":  "Trozos de piña"
+    },
+    {
+      "id":       "mjt",
+      "cocktail": "Mojito",
+      "origen":   "Cuba",
+      "metodo":   "Stir",
+      "copa":     "Higball",
+      "receta":   "45 ml. de Ron blanco, 20 ml. de zumo de lima, Un chorrito de agua con gas, 6 hojas de menta o hierbabuena, 2 cucharadas de azúcar blanca, Hielo picado",
+      "garnish":  "Hoja de hierbabuena o rodaja de lima"
+    },
+    {
+      "id":       "teq-sunrise",
+      "cocktail": "Tequila Sunrise",
+      "origen":   "Mexico",
+      "metodo":   "Shake",
+      "copa":     "Cocktail",
+      "receta":   "45 ml. de Tequila, 90 ml. de Zumo de naranja, 15 ml. de Granadina, Hielo",
+      "garnish":  "Una rodaja de naranja y una ginda."
+    },
+    {
+      "id":       "cosm",
+      "cocktail": "Cosmopolitan",
+      "origen":   "United States",
+      "metodo":   "Shake",
+      "copa":     "Cocktail",
+      "receta":   "40 ml. de Vodka Citron, 15 ml. de Cointreau, 15 ml. de zumo de lima ,30 ml. de zumo de arándano rojo, Hielo, Corteza de limón",
+      "garnish":  "Rojada o espiral de limón"
+    },
+    {
+      "id":       "ap-spritz",
+      "cocktail": "Aperol Spritz",
+      "origen":   "Italia",
+      "metodo":   "Stir",
+      "copa":     "Cocktail",
+      "receta":   "40 ml. de Prosecco, 40 ml. de Aperol, Un chorro de soda, Hielos",
+      "garnish":  "Rodaja de naranja"
+    },
+    {
+      "id":       "caipi",
+      "cocktail": "Caipirinha",
+      "origen":   "Brasil",
+      "metodo":   "Stir",
+      "copa":     "Old fashioned",
+      "receta":   "60 ml. de Cachaça, 1 lima cortada en 4 trozos, 4 cucharadas de azúcar de caña blanco, Hielo picado",
+      "garnish":  "Una hoja de menta o un trozo de cáscara de lima."
+    },
+    {
+      "id":       "b-mary",
+      "cocktail": "Bloody Mary",
+      "origen":   "Francia",
+      "metodo":   "Shake",
+      "copa":     "Higball",
+      "receta":   "45 ml. de Vodka, 90 ml. de zumo de tomate, 15 ml. de zumo de limón, 2 golpes de salsa Worcestershire, 3 gotas de Tabasco, Una pizca de sal de apio, Un poco de pimienta, Hielos",
+      "garnish":  "Una rodaja de limón o una rama de apio"
+    },
+    {
+      "id":       "appletini",
+      "cocktail": "Apple Martini",
+      "origen":   "United States",
+      "metodo":   "Shake",
+      "copa":     "Martini",
+      "receta":   "60 ml. de Vodka, 30 ml. de licor de manzana verde, 60 ml. de zumo de manzana verde, Rodaja de manzana, Hielos",
+      "garnish":  "Una rodaja de manzana"
+    },
+    {
+      "id":       "gdfthr",
+      "cocktail": "Godfather",
+      "origen":   "United States",
+      "metodo":   "Build",
+      "copa":     "Old fashioned",
+      "receta":   "35 ml. de Whisky Escocés, 35 ml. de Amaretto, Hielos",
+      "garnish":  "Un trozo de cáscara de naranja en espiral o con una guinda."
+    },
+    {
+      "id":       "ngrn",
+      "cocktail": "Negroni",
+      "origen":   "Italia",
+      "metodo":   "Build",
+      "copa":     "Old fashioned",
+      "receta":   "45 ml. de Ginebra, 45 ml. de Campari, 45 ml. Vermut Rojo, Un trocito de piel de naranja, Hielos",
+      "garnish":  "Un trozo de naranja o piel de naranja"
+    },
+    {
+      "id":       "j-collins",
+      "cocktail": "John Collins",
+      "origen":   "UK",
+      "metodo":   "Stir",
+      "copa":     "Collins",
+      "receta":   "60 ml. de Whisky, 30 ml. de Limón, 15 ml. Jarabe Simple, Agua con gas",
+      "garnish":  "Una rodaja de limón y una cereza"
+    },
+    {
+      "id":       "m-mule",
+      "cocktail": "Moscow Mule",
+      "origen":   "United States",
+      "metodo":   "Stir",
+      "copa":     "Taza de cobre",
+      "receta":   "45 ml. de Vodka, 120 ml. de Cerveza de Jengibre, 10 ml. de zumo lima, Hierbabuena, Hielo picado",
+      "garnish":  "Una rodaja de lima y hierbabuena"
+    },
+    {
+      "id":       "mrg",
+      "cocktail": "Margarita",
+      "origen":   "Mexico",
+      "metodo":   "Shake",
+      "copa":     "Margarita",
+      "receta":   "50 ml. de Tequila Blanco, 25 ml. de Triple Seco, 25 ml. de zumo de limón, Sal, Hielo",
+      "garnish":  "Copa previamente escarchada"
+    },
+    {
+      "id":       "french-c",
+      "cocktail": "French Conection",
+      "origen":   "Francia",
+      "metodo":   "Stir",
+      "copa":     "Old fashioned",
+      "receta":   "35 ml. de Cognac, 35 ml. de Amaretto, Hielos",
+      "garnish":  "Una cereza o una rodaja de naranja"
+    },
+    {
+      "id":       "sdcr",
+      "cocktail": "Sidecar",
+      "origen":   "Francia",
+      "metodo":   "Shake",
+      "copa":     "Martini",
+      "receta":   "50 ml. de Coñac, 20 ml. de Triple Sec, 20 ml. de zumo de limón fresco, Hielos, Rodaja de limón o cáscara de naranja (opcional)",
+      "garnish":  "Una rodaja de limón un trozo de cáscara de naranja"
+    },
+    {
+      "id":       "b-52",
+      "cocktail": "B-52",
+      "origen":   "United States",
+      "metodo":   "Layer",
+      "copa":     "Chupito",
+      "receta":   "20 ml. de Licor café, 20 ml. de Crema Irlandesa, 20 ml. de Grand Marnier"
+    },
+    {
+      "id":       "Mllca",
+      "cocktail": "Mallorca",
+      "origen":   "España",
+      "metodo":   "Stir",
+      "copa":     "Martini",
+      "receta":   "30 ml. de Ron Añejo, 15  ml. de Licor de Bananas, 15 de Vermut Seco, 15 ml. de Drambuie",
+      "garnish":  "Piel de naranja"
+    },
+    {
+      "id":       "H-neck",
+      "cocktail": "Horse's Neck",
+      "origen":   "United States",
+      "metodo":   "Stir",
+      "copa":     "Higball",
+      "receta":   "40 ml. de Brandy, 120 ml de Ginger Ale, Corteza de limón cortada en forma de espiral, Una pizca de Angostura (opcional)",
+      "garnish":  "Coloca la corteza de limón con uno de los extremos sobresaliendo del vaso"
+    },
+    {
+      "id":       "c-libre",
+      "cocktail": "Cuba Libre",
+      "origen":   "Cuba",
+      "metodo":   "Build",
+      "copa":     "Old fashioned",
+      "receta":   "50 ml. de Ron blanco, 150 ml. de Cola, 10 ml. de lima, Hielo",
+      "garnish":  "Rodaja de lima o limón"
+    },
+    {
+      "id":       "m-tai",
+      "cocktail": "Mai Tai",
+      "origen":   "United States",
+      "metodo":   "Shake",
+      "copa":     "DOF",
+      "receta":   "30 ml. de Ron dorado, 30 ml. de Ron blanco, 15 ml. de Curaçao Naranja, 30 ml. de zumo de lima, 15 ml. de Orgeat, 7,5 ml. de jarabe de azúcar, Hielo",
+      "garnish":  "Una hoja de menta, corteza de lima y un pincho con un trozo de piña y una guinda."
+    }
+  ]
+}

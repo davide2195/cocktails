@@ -1,0 +1,46 @@
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ cocktail.cocktail }}</mat-card-title>
+  </mat-card-header>
+
+  <!-- TODO: imagen -->
+   <img mat-card-image [src]="cocktail | cocktailImage" [alt]="cocktail.cocktail">
+
+  <mat-card-content class="mt-2">
+    <h4>{{ cocktail.metodo }}</h4>
+    <p>
+      <strong>País de origen</strong> {{ cocktail.origen }}
+      <br>
+      <mat-chip-listbox>
+        <mat-chip>
+          {{ cocktail.copa }}
+        </mat-chip>
+      </mat-chip-listbox>
+    </p>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-actions>
+
+    <button mat-button
+       mat-raised
+       color="primary"
+       [routerLink]="['/cocktails/edit', cocktail.id]">
+      <mat-icon>edit</mat-icon>
+      Edit
+    </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button
+        mat-raised
+        [routerLink]="['/cocktails', cocktail.id]">
+        <mat-icon>more_horiz</mat-icon>
+        More
+    </button>
+
+  </mat-card-actions>
+
+</mat-card>

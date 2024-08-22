@@ -1,0 +1,35 @@
+<div class="flex flex-column p-2">
+
+  <h3>Search</h3>
+
+  <mat-form-field>
+    <mat-label>Search Cocktail</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="searchInput"
+      (input)="searchCocktail()"
+      [matAutocomplete]="auto"
+    />
+
+    <mat-autocomplete autoActiveFirstOption
+      #auto="matAutocomplete"
+      (optionSelected)="onSelectedOption( $event )"
+      >
+      <mat-option *ngFor="let cocktail of cocktails" [value]="cocktail">
+        {{ cocktail.cocktail }}
+      </mat-option>
+
+      <mat-option
+        *ngIf="cocktails.length === 0 && searchInput.value && searchInput.value.length > 0"
+        value="">
+        No se encontró nada con el término {{ searchInput.value }}
+      </mat-option>
+    </mat-autocomplete>
+
+  </mat-form-field>
+
+  {{ selectedCocktail | json }}
+
+
+</div>
